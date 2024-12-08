@@ -2,10 +2,14 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "baseUrl": "./",
     "paths": {
       "@/*": [
         "./*"
-      ]
+      ],
+      "@/screens":["app/screens"],
+      "@/screens/HomeScreen":["app/screens/HomeScreen"],
+      "@/screens/NoteTakingScreen":["app/screens/NoteTakingScreen"]
     }
   },
   "include": [
